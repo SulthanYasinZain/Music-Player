@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <main>
+      <div class="flex flex-col items-center justify-center h-screen">
+        <img
+          id="bg"
+          class="z-0 absolute w-full h-full blur-lg object-cover"
+          src="cover.jpg"
+          alt=""
+        />
+        <div class="z-10">
+          <img
+            width="300px"
+            class="rounded-lg drop-shadow-2xl"
+            src="cover.jpg"
+            alt="cover Music"
+          />
+        </div>
+        <h2 class="z-10 text-white text-4xl drop-shadow-md">Sofia</h2>
+        <h3 class="z-10 text-white text-2xl drop-shadow-md">Clairo</h3>
+        <div class="z-10 flex justify-between w-10/12 sm:w-6/12 lg:w-3/12">
+          <p class="text-white drop-shadow-lg">0:00</p>
+          <p class="text-white drop-shadow-lg">3:08</p>
+        </div>
+        <input
+          type="range"
+          id="slider"
+          class="slider appearance-none bg-transparent h-2 z-10 w-10/12 sm:w-6/12 lg:w-3/12"
+        />
+        <div class="z-10 text-white">
+          <button id="button">
+            <img src="play.png" alt="" class="w-15 p-2" id="img" />
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

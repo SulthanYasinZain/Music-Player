@@ -1,0 +1,33 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Mencegah scrollbar */
+}
+
+.bg-image {
+  background-image: url("cover.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200vh;
+  margin: 0;
+  padding: 0;
+  display: fixed;
+}
+
+.slider {
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    90deg,
+    rgb(233, 232, 232) 0%,
+    rgb(201, 198, 198) 54%,
+    rgb(199, 187, 187) 100%
+  );
+}
+
+#bg {
+  overflow: hidden;
+  width: 300vw; /* 200% lebar viewport */
+  height: 100vh; /* 200% tinggi viewport */
+  animation: rotate 100s linear infinite;
+}
